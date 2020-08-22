@@ -6,7 +6,16 @@ class HomeViewController: UITableViewController {
         .init(
             title: "Data Structures",
             items: [
-                Section.Item(name: "Stack", viewController: makeViewController(color: .red)),
+                Section.Item(
+                    name: "Stack",
+                    viewController: StackViewController(
+                        stack: [
+                            Card.random(),
+                            Card.random(),
+                            Card.random()
+                        ]
+                    )
+                ),
                 Section.Item(name: "Queue", viewController: makeViewController(color: .green)),
             ]
         ),
@@ -62,7 +71,7 @@ extension HomeViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let viewController = sections[indexPath.section].items[indexPath.row].viewController
-        navigationController?.present(viewController, animated: true)
+        navigationController?.pushViewController(viewController, animated: true)
     }
 }
 

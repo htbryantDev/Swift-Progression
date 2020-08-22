@@ -12,7 +12,12 @@
 		1956AF2024F11B5300202A41 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1956AF1F24F11B5300202A41 /* HomeViewController.swift */; };
 		1956AF2524F11B5500202A41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1956AF2424F11B5500202A41 /* Assets.xcassets */; };
 		1956AF2824F11B5500202A41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1956AF2624F11B5500202A41 /* LaunchScreen.storyboard */; };
-		1956AF3324F11B5600202A41 /* Swift_ProgressionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1956AF3224F11B5600202A41 /* Swift_ProgressionTests.swift */; };
+		1961D1F924F46AB800464676 /* StackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1961D1F824F46AB800464676 /* StackTests.swift */; };
+		19B641F024F1366000D6B2DD /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B641EF24F1366000D6B2DD /* StackViewController.swift */; };
+		19B641F324F138CF00D6B2DD /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B641F224F138CF00D6B2DD /* Stack.swift */; };
+		19B641F524F1A07000D6B2DD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B641F424F1A06F00D6B2DD /* Constants.swift */; };
+		19B641F724F1A0B700D6B2DD /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B641F624F1A0B700D6B2DD /* CardView.swift */; };
+		19B641F924F1A3DF00D6B2DD /* StackViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B641F824F1A3DF00D6B2DD /* StackViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +39,13 @@
 		1956AF2724F11B5500202A41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1956AF2924F11B5500202A41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1956AF2E24F11B5600202A41 /* Swift-ProgressionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift-ProgressionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1956AF3224F11B5600202A41 /* Swift_ProgressionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_ProgressionTests.swift; sourceTree = "<group>"; };
 		1956AF3424F11B5600202A41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1961D1F824F46AB800464676 /* StackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTests.swift; sourceTree = "<group>"; };
+		19B641EF24F1366000D6B2DD /* StackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewController.swift; sourceTree = "<group>"; };
+		19B641F224F138CF00D6B2DD /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		19B641F424F1A06F00D6B2DD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		19B641F624F1A0B700D6B2DD /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		19B641F824F1A3DF00D6B2DD /* StackViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +87,13 @@
 		1956AF1A24F11B5300202A41 /* Swift-Progression */ = {
 			isa = PBXGroup;
 			children = (
+				19B641F124F138C000D6B2DD /* Data Structures */,
 				1956AF1B24F11B5300202A41 /* AppDelegate.swift */,
 				1956AF1D24F11B5300202A41 /* SceneDelegate.swift */,
 				1956AF1F24F11B5300202A41 /* HomeViewController.swift */,
+				19B641EF24F1366000D6B2DD /* StackViewController.swift */,
+				19B641F624F1A0B700D6B2DD /* CardView.swift */,
+				19B641F424F1A06F00D6B2DD /* Constants.swift */,
 				1956AF2424F11B5500202A41 /* Assets.xcassets */,
 				1956AF2624F11B5500202A41 /* LaunchScreen.storyboard */,
 				1956AF2924F11B5500202A41 /* Info.plist */,
@@ -90,10 +104,19 @@
 		1956AF3124F11B5600202A41 /* Swift-ProgressionTests */ = {
 			isa = PBXGroup;
 			children = (
-				1956AF3224F11B5600202A41 /* Swift_ProgressionTests.swift */,
+				19B641F824F1A3DF00D6B2DD /* StackViewControllerTests.swift */,
 				1956AF3424F11B5600202A41 /* Info.plist */,
+				1961D1F824F46AB800464676 /* StackTests.swift */,
 			);
 			path = "Swift-ProgressionTests";
+			sourceTree = "<group>";
+		};
+		19B641F124F138C000D6B2DD /* Data Structures */ = {
+			isa = PBXGroup;
+			children = (
+				19B641F224F138CF00D6B2DD /* Stack.swift */,
+			);
+			path = "Data Structures";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,9 +218,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19B641F724F1A0B700D6B2DD /* CardView.swift in Sources */,
 				1956AF2024F11B5300202A41 /* HomeViewController.swift in Sources */,
+				19B641F324F138CF00D6B2DD /* Stack.swift in Sources */,
+				19B641F024F1366000D6B2DD /* StackViewController.swift in Sources */,
 				1956AF1C24F11B5300202A41 /* AppDelegate.swift in Sources */,
 				1956AF1E24F11B5300202A41 /* SceneDelegate.swift in Sources */,
+				19B641F524F1A07000D6B2DD /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,7 +232,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1956AF3324F11B5600202A41 /* Swift_ProgressionTests.swift in Sources */,
+				1961D1F924F46AB800464676 /* StackTests.swift in Sources */,
+				19B641F924F1A3DF00D6B2DD /* StackViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
