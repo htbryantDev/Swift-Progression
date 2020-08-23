@@ -18,6 +18,10 @@
 		19B641F524F1A07000D6B2DD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B641F424F1A06F00D6B2DD /* Constants.swift */; };
 		19B641F724F1A0B700D6B2DD /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B641F624F1A0B700D6B2DD /* CardView.swift */; };
 		19B641F924F1A3DF00D6B2DD /* StackViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B641F824F1A3DF00D6B2DD /* StackViewControllerTests.swift */; };
+		19B641FB24F1A80000D6B2DD /* SortViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B641FA24F1A80000D6B2DD /* SortViewController.swift */; };
+		19B641FE24F1AA1600D6B2DD /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B641FD24F1AA1600D6B2DD /* UIView+Extensions.swift */; };
+		19B6420124F2AAB700D6B2DD /* Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6420024F2AAB700D6B2DD /* Sort.swift */; };
+		19B6420324F2ABD000D6B2DD /* SortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6420224F2ABCF00D6B2DD /* SortTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +50,10 @@
 		19B641F424F1A06F00D6B2DD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		19B641F624F1A0B700D6B2DD /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		19B641F824F1A3DF00D6B2DD /* StackViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewControllerTests.swift; sourceTree = "<group>"; };
+		19B641FA24F1A80000D6B2DD /* SortViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortViewController.swift; sourceTree = "<group>"; };
+		19B641FD24F1AA1600D6B2DD /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		19B6420024F2AAB700D6B2DD /* Sort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sort.swift; sourceTree = "<group>"; };
+		19B6420224F2ABCF00D6B2DD /* SortTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,11 +95,14 @@
 		1956AF1A24F11B5300202A41 /* Swift-Progression */ = {
 			isa = PBXGroup;
 			children = (
+				19B641FF24F2AA9900D6B2DD /* Algorithms */,
+				19B641FC24F1AA0800D6B2DD /* Extensions */,
 				19B641F124F138C000D6B2DD /* Data Structures */,
 				1956AF1B24F11B5300202A41 /* AppDelegate.swift */,
 				1956AF1D24F11B5300202A41 /* SceneDelegate.swift */,
 				1956AF1F24F11B5300202A41 /* HomeViewController.swift */,
 				19B641EF24F1366000D6B2DD /* StackViewController.swift */,
+				19B641FA24F1A80000D6B2DD /* SortViewController.swift */,
 				19B641F624F1A0B700D6B2DD /* CardView.swift */,
 				19B641F424F1A06F00D6B2DD /* Constants.swift */,
 				1956AF2424F11B5500202A41 /* Assets.xcassets */,
@@ -107,6 +118,7 @@
 				19B641F824F1A3DF00D6B2DD /* StackViewControllerTests.swift */,
 				1956AF3424F11B5600202A41 /* Info.plist */,
 				1961D1F824F46AB800464676 /* StackTests.swift */,
+				19B6420224F2ABCF00D6B2DD /* SortTests.swift */,
 			);
 			path = "Swift-ProgressionTests";
 			sourceTree = "<group>";
@@ -117,6 +129,22 @@
 				19B641F224F138CF00D6B2DD /* Stack.swift */,
 			);
 			path = "Data Structures";
+			sourceTree = "<group>";
+		};
+		19B641FC24F1AA0800D6B2DD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				19B641FD24F1AA1600D6B2DD /* UIView+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		19B641FF24F2AA9900D6B2DD /* Algorithms */ = {
+			isa = PBXGroup;
+			children = (
+				19B6420024F2AAB700D6B2DD /* Sort.swift */,
+			);
+			path = Algorithms;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +248,9 @@
 			files = (
 				19B641F724F1A0B700D6B2DD /* CardView.swift in Sources */,
 				1956AF2024F11B5300202A41 /* HomeViewController.swift in Sources */,
+				19B641FB24F1A80000D6B2DD /* SortViewController.swift in Sources */,
+				19B6420124F2AAB700D6B2DD /* Sort.swift in Sources */,
+				19B641FE24F1AA1600D6B2DD /* UIView+Extensions.swift in Sources */,
 				19B641F324F138CF00D6B2DD /* Stack.swift in Sources */,
 				19B641F024F1366000D6B2DD /* StackViewController.swift in Sources */,
 				1956AF1C24F11B5300202A41 /* AppDelegate.swift in Sources */,
@@ -234,6 +265,7 @@
 			files = (
 				1961D1F924F46AB800464676 /* StackTests.swift in Sources */,
 				19B641F924F1A3DF00D6B2DD /* StackViewControllerTests.swift in Sources */,
+				19B6420324F2ABD000D6B2DD /* SortTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

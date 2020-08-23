@@ -53,14 +53,7 @@ class StackViewController: UIViewController {
     }
     
     private func setUpContentStackView() {
-        view.addSubview(contentStackView)
-        
-        NSLayoutConstraint.activate([
-            contentStackView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 16),
-            contentStackView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -16),
-            contentStackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -16),
-            contentStackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 16),
-        ])
+        contentStackView.constrainToEdges(parent: view)
         
         contentStackView.addArrangedSubview(cardView)
         contentStackView.addArrangedSubview(actionsStackView)

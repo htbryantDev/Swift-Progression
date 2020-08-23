@@ -22,9 +22,7 @@ class HomeViewController: UITableViewController {
         .init(
             title: "Algorithms",
             items: [
-                Section.Item(name: "Bubble Sort", viewController: makeViewController(color: .yellow)),
-                Section.Item(name: "Selection Sort", viewController: makeViewController(color: .purple)),
-                Section.Item(name: "Insertion Sort", viewController: makeViewController(color: .blue)),
+                Section.Item(name: "Sort", viewController: SortViewController()),
             ]
         )
     ]
