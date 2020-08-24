@@ -16,13 +16,13 @@ class HomeViewController: UITableViewController {
                         ]
                     )
                 ),
-                Section.Item(name: "Queue", viewController: makeViewController(color: .green)),
             ]
         ),
         .init(
             title: "Algorithms",
             items: [
                 Section.Item(name: "Sort", viewController: SortViewController()),
+                Section.Item(name: "Binary Search", viewController: BinarySearchViewController())
             ]
         )
     ]
@@ -82,11 +82,5 @@ extension HomeViewController {
             let name: String
             let viewController: UIViewController
         }
-    }
-    
-    static private func makeViewController(color: UIColor) -> UIViewController {
-        let viewController = UIViewController()
-        viewController.view.backgroundColor = color
-        return viewController
     }
 }

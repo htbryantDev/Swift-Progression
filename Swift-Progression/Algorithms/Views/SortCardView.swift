@@ -4,9 +4,9 @@ class SortCardView<T: Comparable>: UIView {
     private let titleLabel = UILabel()
     private let detailLabel = UILabel()
     private let durationLabel = UILabel()
-    private let button = UIButton(type: .system)
+    private(set) var button = UIButton(type: .system)
+    private(set) var data: [T]
     private var sortAction: ((inout [T]) -> Double?)?
-    private var data: [T]
     
     private let contentStackView: UIStackView = {
         let stackView = UIStackView()
@@ -56,7 +56,7 @@ class SortCardView<T: Comparable>: UIView {
     }
     
     @objc
-    func buttonAction() {
+    private func buttonAction() {
         guard let duration = sortAction?(&data) else { return }
         durationLabel.numberOfLines = 2
         configureLabel(durationLabel, title: "Speed: \(duration) seconds", font: .systemFont(ofSize: 16))

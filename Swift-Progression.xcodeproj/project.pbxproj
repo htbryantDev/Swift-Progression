@@ -13,6 +13,9 @@
 		1956AF2524F11B5500202A41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1956AF2424F11B5500202A41 /* Assets.xcassets */; };
 		1956AF2824F11B5500202A41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1956AF2624F11B5500202A41 /* LaunchScreen.storyboard */; };
 		1961D1F924F46AB800464676 /* StackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1961D1F824F46AB800464676 /* StackTests.swift */; };
+		1961D1F324F4433100464676 /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1961D1F224F4433100464676 /* BinarySearch.swift */; };
+		1961D1F524F443C700464676 /* BinarySearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1961D1F424F443C700464676 /* BinarySearchViewController.swift */; };
+		1961D1F724F4633200464676 /* BinarySearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1961D1F624F4633200464676 /* BinarySearchTests.swift */; };
 		19B641F024F1366000D6B2DD /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B641EF24F1366000D6B2DD /* StackViewController.swift */; };
 		19B641F324F138CF00D6B2DD /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B641F224F138CF00D6B2DD /* Stack.swift */; };
 		19B641F524F1A07000D6B2DD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B641F424F1A06F00D6B2DD /* Constants.swift */; };
@@ -23,6 +26,7 @@
 		19B6420124F2AAB700D6B2DD /* Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6420024F2AAB700D6B2DD /* Sort.swift */; };
 		19B6420324F2ABD000D6B2DD /* SortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6420224F2ABCF00D6B2DD /* SortTests.swift */; };
 		19B6420C24F2B35C00D6B2DD /* SortCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6420B24F2B35C00D6B2DD /* SortCardView.swift */; };
+		19B6421024F2B6EC00D6B2DD /* SortCardViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6420F24F2B6EC00D6B2DD /* SortCardViewTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +50,9 @@
 		1956AF2E24F11B5600202A41 /* Swift-ProgressionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift-ProgressionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1956AF3424F11B5600202A41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1961D1F824F46AB800464676 /* StackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTests.swift; sourceTree = "<group>"; };
+		1961D1F224F4433100464676 /* BinarySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearch.swift; sourceTree = "<group>"; };
+		1961D1F424F443C700464676 /* BinarySearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchViewController.swift; sourceTree = "<group>"; };
+		1961D1F624F4633200464676 /* BinarySearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTests.swift; sourceTree = "<group>"; };
 		19B641EF24F1366000D6B2DD /* StackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewController.swift; sourceTree = "<group>"; };
 		19B641F224F138CF00D6B2DD /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		19B641F424F1A06F00D6B2DD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -56,6 +63,7 @@
 		19B6420024F2AAB700D6B2DD /* Sort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sort.swift; sourceTree = "<group>"; };
 		19B6420224F2ABCF00D6B2DD /* SortTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortTests.swift; sourceTree = "<group>"; };
 		19B6420B24F2B35C00D6B2DD /* SortCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortCardView.swift; sourceTree = "<group>"; };
+		19B6420F24F2B6EC00D6B2DD /* SortCardViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortCardViewTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +126,8 @@
 				1956AF3424F11B5600202A41 /* Info.plist */,
 				1961D1F824F46AB800464676 /* StackTests.swift */,
 				19B6420224F2ABCF00D6B2DD /* SortTests.swift */,
+				19B6420F24F2B6EC00D6B2DD /* SortCardViewTests.swift */,
+				1961D1F624F4633200464676 /* BinarySearchTests.swift */,
 			);
 			path = "Swift-ProgressionTests";
 			sourceTree = "<group>";
@@ -146,6 +156,7 @@
 				19B6420824F2B31C00D6B2DD /* Views */,
 				19B6420724F2B31600D6B2DD /* ViewControllers */,
 				19B6420024F2AAB700D6B2DD /* Sort.swift */,
+				1961D1F224F4433100464676 /* BinarySearch.swift */,
 			);
 			path = Algorithms;
 			sourceTree = "<group>";
@@ -154,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				19B641FA24F1A80000D6B2DD /* SortViewController.swift */,
+				1961D1F424F443C700464676 /* BinarySearchViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -289,6 +301,8 @@
 				19B641FE24F1AA1600D6B2DD /* UIView+Extensions.swift in Sources */,
 				19B641F324F138CF00D6B2DD /* Stack.swift in Sources */,
 				19B641F024F1366000D6B2DD /* StackViewController.swift in Sources */,
+				1961D1F524F443C700464676 /* BinarySearchViewController.swift in Sources */,
+				1961D1F324F4433100464676 /* BinarySearch.swift in Sources */,
 				1956AF1C24F11B5300202A41 /* AppDelegate.swift in Sources */,
 				1956AF1E24F11B5300202A41 /* SceneDelegate.swift in Sources */,
 				19B641F524F1A07000D6B2DD /* Constants.swift in Sources */,
@@ -300,6 +314,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1961D1F924F46AB800464676 /* StackTests.swift in Sources */,
+				1961D1F724F4633200464676 /* BinarySearchTests.swift in Sources */,
+				19B6421024F2B6EC00D6B2DD /* SortCardViewTests.swift in Sources */,
 				19B641F924F1A3DF00D6B2DD /* StackViewControllerTests.swift in Sources */,
 				19B6420324F2ABD000D6B2DD /* SortTests.swift in Sources */,
 			);

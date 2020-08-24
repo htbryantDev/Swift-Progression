@@ -2,7 +2,6 @@ import Foundation
 
 struct Sort {
     static func bubble<Element: Comparable>(_ array: inout [Element]) -> Double? {
-        // There is no need to sort the collection if it has less than two elements.
         guard array.count >= 2 else {
             return nil
         }
@@ -10,6 +9,7 @@ struct Sort {
         let start = CFAbsoluteTimeGetCurrent()
         
         // A single-pass bubbles the largest value to the end of the collection. Every pass needs to compare one less value than in the previous pass, so you essentially shorten the array by one with each pass.
+        
         for end in (1..<array.count).reversed() {
             var swapped = false
             // This loop performs a single pass; it compares adjacent values and swaps them if needed.
@@ -19,7 +19,8 @@ struct Sort {
                     swapped = true
                 }
             }
-            //If no values were swapped this pass, the collection must be sorted, and you can exit early.
+            
+            // If no values were swapped this pass, the collection must be sorted, and you can exit early.
             if !swapped {
                 return (CFAbsoluteTimeGetCurrent() - start)
             }
